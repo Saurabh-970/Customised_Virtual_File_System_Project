@@ -167,7 +167,7 @@ void InitialiseUAREA()
         uareaobj.UFDT[i] = NULL;       // initialise pointer to NULL
     }
     
-    printf("Marvellous CVFS : UAREA  gets initialised successfully\n");
+    printf("MINI CVFS : UAREA  gets initialised successfully\n");
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -184,7 +184,7 @@ void InitialiseSuperBlock()
     superobj.TotalInodes = MAXINODE;
     superobj.FreeInodes = MAXINODE;
 
-    printf("Marvellous CVFS : Super block gets initialised successfully\n");
+    printf("MINI CVFS : Super block gets initialised successfully\n");
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -229,7 +229,7 @@ void CreateDILB()
 
     }
 
-    printf("Marvellous CVFS : DILB created successfully\n");
+    printf("MINI CVFS : DILB created successfully\n");
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -255,7 +255,7 @@ void StartAuxillaryDataInitilaisation()
 
     InitialiseUAREA();
 
-    printf("Marvellous CVFS : Auxillary data initilaised successfully\n");
+    printf("MINI CVFS : Auxillary data initilaised successfully\n");
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -270,7 +270,7 @@ void StartAuxillaryDataInitilaisation()
 void DisplayHelp()
 {
     printf("--------------------------------------------------------------------------------\n"); 
-    printf("-------------------------Marvellous CVFS Help Page------------------------------\n");
+    printf("------------------------------MINI CVFS Help Page-------------------------------\n");
     printf("--------------------------------------------------------------------------------\n"); 
 
     printf("man    : It is used to display manual page\n");
@@ -477,7 +477,7 @@ void LsFile()
     PINODE temp = head;
 
     printf("--------------------------------------------------------------------------------\n"); 
-    printf("------------------------Marvellous CVFS Files Information-----------------------\n");
+    printf("--------------------------MINI CVFS Files Information---------------------------\n");
     printf("--------------------------------------------------------------------------------\n"); 
 
     while(temp != NULL)
@@ -701,7 +701,7 @@ int main()
     StartAuxillaryDataInitilaisation();
 
     printf("--------------------------------------------------------------------------------\n"); 
-    printf("-------------------Marvellous CVFS started successfully-------------------------\n");
+    printf("-------------------------MINI CVFS started successfully-------------------------\n");
     printf("--------------------------------------------------------------------------------\n"); 
 
 
@@ -724,7 +724,7 @@ int main()
             // Marvellous CVFS : > exit
             if(strcmp("exit",Command[0]) == 0) //comparing exit with the given string by user
             {
-                printf("Thank You For Using Marvellous CVFS\n");
+                printf("Thank You For Using MINI CVFS\n");
 
                 printf("Deallocating all the allocated resources\n");
 
@@ -819,7 +819,7 @@ int main()
 
                 if(iRet == ERR_INVALID_PARAMETER)
                 {
-                    printf("Error : Unable to create the file as paramerts are invalid\n");
+                    printf("Error : Unable to create the file as parameters are invalid\n");
                     printf("Please refer man page\n");
                 }
 
